@@ -456,8 +456,8 @@ int yy_flex_debug = 0;
 #define YY_MORE_ADJ 0
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
-#line 1 "input.l"
-#line 2 "input.l"
+#line 1 "input.lex"
+#line 2 "input.lex"
 #include <stdio.h>
 int count = 1;
 int numcount = 1;
@@ -679,7 +679,7 @@ YY_DECL
 		}
 
 	{
-#line 19 "input.l"
+#line 19 "input.lex"
 
 #line 685 "lex.yy.c"
 
@@ -740,83 +740,83 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 20 "input.l"
+#line 20 "input.lex"
 {printf("num%d: %s\n", numcount,yytext); numcount++;};
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 21 "input.l"
+#line 21 "input.lex"
 printf("opt-not: %s\n", yytext);
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 22 "input.l"
+#line 22 "input.lex"
 printf("opt-or: %s\n", yytext);
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 23 "input.l"
+#line 23 "input.lex"
 printf("opt-and: %s\n", yytext);
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 24 "input.l"
+#line 24 "input.lex"
 printf("opt-xor: %s\n", yytext);
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 25 "input.l"
+#line 25 "input.lex"
 printf("opt-sum: %s\n", yytext);
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 26 "input.l"
+#line 26 "input.lex"
 printf("opt-mul: %s\n", yytext);
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 27 "input.l"
+#line 27 "input.lex"
 printf("opt-div: %s\n", yytext);
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 28 "input.l"
+#line 28 "input.lex"
 printf("opt-menos: %s\n", yytext);
 	YY_BREAK
 case 10:
 YY_RULE_SETUP
-#line 29 "input.l"
+#line 29 "input.lex"
 printf("par-a: %s\n", yytext);
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 30 "input.l"
+#line 30 "input.lex"
 printf("par-c: %s\n", yytext);
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 31 "input.l"
+#line 31 "input.lex"
 ;
 	YY_BREAK
 case 13:
 YY_RULE_SETUP
-#line 32 "input.l"
+#line 32 "input.lex"
 {printf("ERROR Léxico\n");};
 	YY_BREAK
 case 14:
 /* rule 14 can match eol */
 YY_RULE_SETUP
-#line 33 "input.l"
+#line 33 "input.lex"
 {count++;printf("---Line %d---\n", count); numcount = 1;}
 	YY_BREAK
 case 15:
 YY_RULE_SETUP
-#line 34 "input.l"
+#line 34 "input.lex"
 printf("ERROR Léxico\n");
 	YY_BREAK
 case 16:
 YY_RULE_SETUP
-#line 35 "input.l"
+#line 35 "input.lex"
 ECHO;
 	YY_BREAK
 #line 823 "lex.yy.c"
@@ -1824,7 +1824,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 35 "input.l"
+#line 35 "input.lex"
 
 
 #define MAX_LINE_LENGTH 1024
